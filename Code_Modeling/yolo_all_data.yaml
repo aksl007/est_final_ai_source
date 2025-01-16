@@ -1,0 +1,9 @@
+train: 
+  - /workspace/data_for_yolo/train
+  - /workspace/data_for_yolo/Albumentation  # 증강 데이터 경로 추가
+  - /workspace/data_for_yolo/face_crop
+  - /workspace/data_for_yolo/mask_boxout
+val: /workspace/data_for_yolo/val
+test: /workspace/data_for_yolo/test
+nc: 4  # 4개 감정 클래스
+names: ['기쁨', '분노', '슬픔', '당황']  # 얼굴과 감정 클래스 이름
